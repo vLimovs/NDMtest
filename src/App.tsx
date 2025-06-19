@@ -68,8 +68,8 @@ const App = () => {
           ))}
         </tbody>
       </table>
-      <a href="https://github.com/vLimovs" target="_blank">
-        <img className="github" src={GitHub} />
+      <a className="github" href="https://github.com/vLimovs" target="_blank">
+        <img src={GitHub} />
       </a>
     </main>
   )
