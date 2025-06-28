@@ -41,8 +41,7 @@ body {
 
   .github {
     max-width: fit-content;
-    background: #d1d1d1;
-    border: 1px solid black;
+    animation: rainbow infinite linear 5s;
 
     img {
       width: 100px;
@@ -55,6 +54,7 @@ body {
     th {
       background: #f5a9cc;
       transition: .3s;
+
 
       &:hover {
         background: #fc89bf;
@@ -72,8 +72,32 @@ body {
   th {
     width: 200px;
     padding: 10px;
+    border-radius: 5px;
+
     @media (max-width: 405px) {
       padding: 0;
     }
+  }
+}
+
+@keyframes rainbow {
+  0% {
+    background-color: blue;
+  }
+
+  25% {
+    background-color: green;
+  }
+
+  50% {
+    background-color: yellow;
+  }
+
+  75% {
+    background-color: red;
+  }
+
+  100% {
+    background-color: blue;
   }
 }
